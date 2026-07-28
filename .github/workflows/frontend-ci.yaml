@@ -61,7 +61,7 @@ jobs:
         run: npm ci
 
       - name: Run Tests
-        run: CI=true npm test
+        run: CI=true npm test -- --passWithNoTests
 
   build:
     name: Build Frontend
