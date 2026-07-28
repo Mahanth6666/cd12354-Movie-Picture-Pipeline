@@ -33,7 +33,7 @@ jobs:
           pip install pipenv
 
       - name: Install Dependencies
-        run: pipenv install
+        run: pipenv install --dev
 
       - name: Run Linter
         run: pipenv run lint
@@ -61,7 +61,7 @@ jobs:
           pip install pipenv
 
       - name: Install Dependencies
-        run: pipenv install
+        run: pipenv install --dev
 
       - name: Run Tests
         run: pipenv run test
@@ -92,7 +92,7 @@ jobs:
           pip install pipenv
 
       - name: Install Dependencies
-        run: pipenv install
+        run: pipenv install --dev
 
       - name: Build Docker Image
         run: docker build -t mp-backend:latest .
